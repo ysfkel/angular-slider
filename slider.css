@@ -21,7 +21,7 @@ rzslider[disabled] {
 
 rzslider[disabled] .rz-pointer {
   cursor: not-allowed;
-  background-color: #d8e0f3;
+  background-color:#0db9f0;
 }
 
 rzslider span {
@@ -72,6 +72,7 @@ rzslider .rz-bar.rz-selection {
 rzslider .rz-pointer {
   top: -14px;
   z-index: 3;
+  outline:none;
   width: 32px;
   height: 32px;
   cursor: pointer;

@@ -966,8 +966,16 @@
        * @param {number} y
        * @return {?}
        */
-      setPosition: function(elem, pos) {
-
+      setPosition: function(elem, pos) { 
+      var isRightPointer=angular.element(elem).hasClass('rz-pointer') && angular.element(elem).hasClass('js-right-pointer');
+      var isLeftPointer=angular.element(elem).hasClass('rz-pointer') && angular.element(elem).hasClass('js-left-pointer');
+      if(isRightPointer){
+                    pos = pos=pos+1.0;
+      }else if(isLeftPointer){
+      
+             pos = pos=pos-1.0;
+      }
+          
         elem.rzsp = pos;
         var css = {};
         css[this.positionProperty] = pos + 'px';
@@ -1448,7 +1456,7 @@
     };
   }]);
   return currentModule.run(["$templateCache", function($templateCache) {
-    $templateCache.put("rzSliderTpl.html", '<span class=rz-bar-wrapper><span class=rz-bar></span></span><span class=rz-bar-wrapper><span class="rz-bar rz-selection" ng-style=barStyle></span></span><span class=rz-pointer></span><span class=rz-pointer></span><span class="rz-bubble rz-limit"></span><span class="rz-bubble rz-limit"></span><span class=rz-bubble></span><span class=rz-bubble></span><span class=rz-bubble></span><ul ng-show=showTicks class=rz-ticks><li ng-repeat="t in ticks track by $index" ng-class="{selected: t.selected && t !=null,tick:t.value !=null,between:t.midTop !=null,slider_point:true}" ng-style=t.style ng-attr-uib-tooltip="{{ t.tooltip }}" ng-attr-tooltip-placement={{t.tooltipPlacement}} ng-attr-tooltip-append-to-body="{{ t.tooltip ? true : undefined}}"><span ng-if="t.value != null" class=tick-value id="tick_id_{{$index}}" ng-attr-uib-tooltip="{{ t.valueTooltip }}" ng-attr-tooltip-placement={{t.valueTooltipPlacement}}>{{ t.value }}</span><span ng-if="t.valueBottom != null" class=tick-value-bottom  ng-attr-uib-tooltip="{{ t.valueTooltip }}" ng-attr-tooltip-placement={{t.valueTooltipPlacement}}>{{t.valueBottom}}</span><span ng-if="t.midTop != null" class=tick-value >{{t.midTop}}</span><span ng-if="t.midBottom != null" class=tick-value-bottom >{{t.midBottom}}</span></li></ul>');
+    $templateCache.put("rzSliderTpl.html", '<span class=rz-bar-wrapper><span class=rz-bar></span></span><span class=rz-bar-wrapper><span class="rz-bar rz-selection" ng-style=barStyle></span></span><span class="rz-pointer js-left-pointer"></span><span class="rz-pointer js-right-pointer js-initial"></span><span class="rz-bubble rz-limit"></span><span class="rz-bubble rz-limit"></span><span class=rz-bubble></span><span class=rz-bubble></span><span class=rz-bubble></span><ul ng-show=showTicks class=rz-ticks><li ng-repeat="t in ticks track by $index" ng-class="{selected: t.selected && t !=null,tick:t.value !=null,between:t.midTop !=null,slider_point:true}" ng-style=t.style ng-attr-uib-tooltip="{{ t.tooltip }}" ng-attr-tooltip-placement={{t.tooltipPlacement}} ng-attr-tooltip-append-to-body="{{ t.tooltip ? true : undefined}}"><span ng-if="t.value != null" class=tick-value id="tick_id_{{$index}}" ng-attr-uib-tooltip="{{ t.valueTooltip }}" ng-attr-tooltip-placement={{t.valueTooltipPlacement}}>{{ t.value }}</span><span ng-if="t.valueBottom != null" class=tick-value-bottom  ng-attr-uib-tooltip="{{ t.valueTooltip }}" ng-attr-tooltip-placement={{t.valueTooltipPlacement}}>{{t.valueBottom}}</span><span ng-if="t.midTop != null" class=tick-value >{{t.midTop}}</span><span ng-if="t.midBottom != null" class=tick-value-bottom >{{t.midBottom}}</span></li></ul>');
 
   }]), currentModule;
 });

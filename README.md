@@ -8,3 +8,8 @@
 <script src="/path/to/angularjs/angular.min.js"></script>
 <script src="/path/to/slider/slider.min.js"></script>
 ```
+
+### Module
+```javascript
+angular.module('yourApp', ['rzModule']);
+```

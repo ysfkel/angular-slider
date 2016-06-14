@@ -43,17 +43,17 @@ Follow these steps to initialze the slider
 ### 
 Initialize slider model and set slider options
 ```javascript
-     $scope.slider = {
-                    model:objectArray,
-                    minValue: 1,
-                    maxValue: objectArray.length,
-                    options: {
-                        step: 0,
-                        ceil: objectArray,
-                        floor: 1,
-                        showTicksValues: true,
-                        onChange:onSliderChangeHandler,
-                    }
-                };
+    $scope.slider={
+            model:objectArray,
+            minValue: 1,
+            maxValue: objectArray.length,
+            options: {
+                      step: 0,
+                      ceil: objectArray,
+                      floor: 1,
+                      showTicksValues: true,
+                      onChange:onSliderChangeHandler,
+                     }
+     };
 ```
    

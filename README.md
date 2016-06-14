@@ -145,9 +145,4 @@ vm.refreshSlider = function () {
     mergeRangeLabelsIfSame: false
 }
  ```
- 
- The two way slider is a customerized version of angularjs-slider,
- you can view all options and slider events on the original version github page [here](https://github.com/angular-slider/angularjs-slider).
 
-
-   

@@ -17,7 +17,7 @@ angular.module('yourApp', ['rzModule']);
 ### Initialize slider
 Follow these steps to initialze the slider
 
-1) Create an object array and each object should have the following properies
+Create an object array with the following properies
 
 ### 
 ```javascript
@@ -49,11 +49,19 @@ Initialize slider model and set slider options
             maxValue: objectArray.length,
             options: {
                       step: 0,
-                      ceil: objectArray,
+                      ceil: objectArray.length,
                       floor: 1,
                       showTicksValues: true,
                       onChange:onSliderChangeHandler,
-                     }
+            }
      };
+```
+### 
+```html
+    <rzslider class='slider' onChange="onSliderChangeHandler()"
+    rz-slider-model="slider.minValue"
+    rz-slider-high="slider.maxValue"
+    rz-slider-options="slider.options"
+    rz-trip="slider.model"  ></rzslider>
 ```
    

@@ -24,11 +24,15 @@ Follow these steps to initialze the slider
    var objectArray=[
        {
            nodeTop:'DBX',
-           nodeBottom:'Dubai'
+           nodeBottom:'Dubai',
+           midTop:'EK456',
+           midBottom:'6h 30m'
        },
        {
            nodeTop:'LND',
-           nodeBottom:'London'
+           nodeBottom:'London',
+           midTop:'EK567',
+           midBottom:'4h 30m'
        },
        {
            nodeTop:'CHC',

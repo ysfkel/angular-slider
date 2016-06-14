@@ -13,3 +13,8 @@
 ```javascript
 angular.module('yourApp', ['rzModule']);
 ```
+
+### Initialize slider
+Follow these steps to initialze the slider
+
+1) Create an object array and each object should have the following properies

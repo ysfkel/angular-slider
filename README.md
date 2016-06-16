@@ -66,9 +66,7 @@ Initialize slider model and set slider options
 ```
 
 ### 
-```html
-![Alt text](https://github.com/ysfkel/angular-slider/blob/master/images/slider-image.PNG?raw=true "Optional Title")
-```
+
 ![Alt text](https://github.com/ysfkel/angular-slider/blob/master/images/slider-image.PNG?raw=true "Optional Title")
 
 ## Common issues

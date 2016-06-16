@@ -64,6 +64,13 @@ Initialize slider model and set slider options
     rz-slider-options="slider.options"
     rz-trip="slider.model"  ></rzslider>
 ```
+
+### 
+```html
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+```
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+
 ## Common issues
 ### My slider is not rendered correctly on load
 If the slider's parent element is not visible during slider initialization, the slider can't know when its parent becomes visible.

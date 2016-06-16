@@ -67,9 +67,9 @@ Initialize slider model and set slider options
 
 ### 
 ```html
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/ysfkel/angular-slider/blob/master/images/slider-image.PNG?raw=true "Optional Title")
 ```
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](https://github.com/ysfkel/angular-slider/blob/master/images/slider-image.PNG?raw=true "Optional Title")
 
 ## Common issues
 ### My slider is not rendered correctly on load
